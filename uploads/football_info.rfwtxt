@@ -8,7 +8,7 @@ widget FootballTeamPage = Scaffold(
       children: [
         Card(
           child: Image(
-            image: NetworkImage(url: data.teamImageUrl),
+            image: NetworkImage(data.teamImageUrl),
             fit: "cover",
           ),
         ),
