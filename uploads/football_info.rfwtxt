@@ -1,0 +1,39 @@
+import core.widgets;
+import core.material;
+
+widget FootballTeamPage = Scaffold(
+  appBar: AppBar(title: Text(text: "Football Team Info")),
+  body: SingleChildScrollView(
+    child: Column(
+      children: [
+        Card(
+          child: Image(
+            image: NetworkImage(url: data.teamImageUrl),
+            fit: "cover",
+          ),
+        ),
+        Padding(
+          padding: [16.0, 8.0],
+          child: Column(
+            crossAxisAlignment: "start",
+            children: [
+              InfoRow(title: "Team Name", info: data.teamName),
+              InfoRow(title: "Founded", info: data.foundedYear),
+              InfoRow(title: "Stadium", info: data.stadiumName),
+              InfoRow(title: "Manager", info: data.managerName),
+              InfoRow(title: "League", info: data.league),
+            ],
+          ),
+        ),
+      ],
+    ),
+  ),
+);
+
+widget InfoRow = Row(
+  mainAxisAlignment: "spaceBetween",
+  children: [
+    Text(text: args.title + ":", style: { fontWeight: "bold" }),
+    Text(text: args.info),
+  ],
+);
