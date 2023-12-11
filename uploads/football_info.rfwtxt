@@ -6,6 +6,10 @@ widget FootballTeamPage = Scaffold(
   body: SingleChildScrollView(
     child: Column(
       children: [
+        Image(
+          source: data.teamImageUrl,
+          fit: "cover",
+        ),
         Padding(
           padding: [16.0, 8.0],
           child: Column(
