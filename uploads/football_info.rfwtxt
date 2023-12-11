@@ -33,7 +33,7 @@ widget FootballTeamPage = Scaffold(
 widget InfoRow = Row(
   mainAxisAlignment: "spaceBetween",
   children: [
-    Text(text: args.title + ":", style: { fontWeight: "bold" }),
+    Text(text: args.title, style: { fontWeight: "bold" }),
     Text(text: args.info),
   ],
 );
