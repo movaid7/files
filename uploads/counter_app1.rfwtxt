@@ -15,7 +15,7 @@ widget Counter = Scaffold(
     ),
   ),
   floatingActionButton: FloatingActionButton(
-    onPressed: event "increment" {arguments: [7]  },
+    onPressed: event "Increment" {arguments: [7]  },
     tooltip: "Increment",
     child: Icon(icon: 0xE047, fontFamily: "MaterialIcons"),
   ),
