@@ -10,12 +10,12 @@ widget Counter = Scaffold(
         Text(text: 'You have pushed the button this many times:', textAlign: "center"),
         Text(text: data.counter, style: {
           fontSize: 36.0,
-  }),
-],
+        }),
+      ],
     ),
   ),
   floatingActionButton: FloatingActionButton(
-    onPressed: event "increment"{},
+    onPressed: event "increment" { },
     tooltip: "Increment",
     child: Icon(icon: 0xE047, fontFamily: "MaterialIcons"),
   ),
